@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 func Prime(n, a int) int {
+	if n < 2 {
+		a++
+		return a
+		}
 	a = 0
 	for i := 2; i < n; i++ {
 		if n%i == 0 {
